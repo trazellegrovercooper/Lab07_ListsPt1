@@ -161,25 +161,25 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     add(1,C) throws no Exception
     add(2,C) throws no Exception
     add(3,C) throws IndexOutOfBoundsException
-    removeFirst() returns B
-    removeLast() returns A
+    removeFirst() returns A
+    removeLast() returns B
     remove(A) returns A
     remove(B) returns B
     remove(C) throws NoSuchElementException
     remove(-1) throws IndexOutOfBoundsException
-    remove(0) returns B
-    remove(1) returns A
+    remove(0) returns A
+    remove(1) returns B
     remove(2) throws IndexOutOfBoundsException
     set(-1,C) throws IndexOutOfBoundsException
     set(0,C) throws no Exception
     set(1,C) throws no Exception
     set(2,C) throws IndexOutOfBoundsException
     get(-1) throws IndexOutOfBoundsException
-    get(0) returns B
-    get(1) returns A
+    get(0) returns A
+    get(1) returns B
     get(2) throws IndexOutOfBoundsException
-    indexOf(A) returns 1
-    indexOf(B) returns 0
+    indexOf(A) returns 0
+    indexOf(B) returns 1
     indexOf(C) returns -1
     first() returns B
     last() returns A
@@ -191,7 +191,7 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     iterator() returns an Iterator reference
     listIterator() throws UnsupportedOperationException
     listIterator(0) throws UnsupportedOperationException
-    toString() returns "[B, A]"
+    toString() returns "[A, B]"
 9) [A] -> add(B) -> [A,B]
 10) [A] -> add(0,B) -> [B,A]
 11) [A] -> add(1,B) -> [A,B]
@@ -404,7 +404,7 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator() throws UnsupportedOperationException
     listIterator(0) throws UnsupportedOperationException
     toString() returns "[A]"
-27) [A,B] -> remove(A) -> [B]
+27) [A,B] -> remove(A) -> [B] // Still not finished, needs double checking
   Tests:
     addToFront(C) throws no Exception
     addToRear(C) throws no Exception
@@ -414,7 +414,7 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     add(C) throws no Exception
     add(-1,C) throws IndexOutOfBoundException
     add(0,C) throws no Exception
-    add(1,C) throws no Exception
+    add(1,C) throws IndexOutOfBoundsException
     add(2,C) throws IndexOutOfBoundsException
     add(3,C) throws IndexOutOfBoundsException
     removeFirst() throws no Exception
@@ -447,7 +447,7 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     iterator() returns an Iterator reference
     listIterator() throws UnsupportedOperationException
     listIterator(0) throws UnsupportedOperationException
-    toString() returns "[A, B]"
+    toString() returns "[B]"
 28) [A,B] -> remove(B) -> [A]
 29) [A,B] -> remove(0) -> [B]
 30) [A,B] -> remove(1) -> [A]
