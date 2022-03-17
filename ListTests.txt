@@ -322,13 +322,11 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     addToRear(C) throws no Exception
     addAfter(C, B) throws no Exception
     addAfter(C, A) throws NoSuchElementException
-    addAfter(C, D) throws NoSuchElementException
     add(C) throws no Exception
     add(-1,C) throws IndexOutOfBoundException
     add(0,C) throws no Exception
     add(1,C) throws no Exception
     add(2,C) throws IndexOutOfBoundsException
-    add(3,C) throws IndexOutOfBoundsException
     removeFirst() throws no Exception
     removeLast() throws no Exception
     remove(A) throws NoSuchElementException
@@ -337,23 +335,18 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     remove(-1) throws IndexOutOfBoundsException
     remove(0) throws no Exception
     remove(1) throws IndexOutOfBoundsException
-    remove(2) throws IndexOutOfBoundsException
     set(-1,C) throws IndexOutOfBoundsException
     set(0,C) throws no Exception
     set(1,C) throws IndexOutOfBoundsException
-    set(2,C) throws IndexOutOfBoundsException
     get(-1) throws IndexOutOfBoundsException
     get(0) returns B
     get(1) throws IndexOutOfBoundsException
-    get(2) throws IndexOutOfBoundsException
     indexOf(A) returns -1
     indexOf(B) returns 0
-    indexOf(C) returns -1
     first() returns B
     last() returns B
     contains(A) returns false
     contains(B) returns true
-    contains(C) returns false
     isEmpty() returns false
     size() returns 1
     iterator() returns an Iterator reference
@@ -366,38 +359,29 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     addToRear(C)  throws no Exception
     addAfter(C, B) throws NoSuchElementException
     addAfter(C, A) throws no Exception
-    addAfter(C, D) throws NoSuchElementException
     add(C) throws no Exception
     add(-1,C) throws IndexOutOfBoundsException
     add(0,C) throws no Exception 
     add(1,C) throws IndexOutOfBoundsException
-    add(2,C) throws IndexOutOfBoundsException
-    add(3,C) throws IndexOutOfBoundsException
     removeFirst() throws no Exception
     removeLast() throws no Exception
     remove(A) returns A
-    remove(B) throws IndexOutOfBoundsException
-    remove(C) throws IndexOutOfBoundsException
+    remove(B) throws NoSuchElementException
     remove(-1) throws IndexOutOfBoundsException
     remove(0) throws no Exception
     remove(1) throws IndexOutOfBoundsException
-    remove(2) throws IndexOutOfBoundsException
     set(-1,C) throws IndexOutOfBoundsException
     set(0,C) throws no Exception
     set(1,C) throws IndexOutOfBoundsException
-    set(2,C) throws IndexOutOfBoundsException
     get(-1) throws IndexOutOfBoundsException
     get(0) returns A
     get(1) throws IndexOutOfBoundsException
-    get(2) throws IndexOutOfBoundsException
     indexOf(A) returns 0
     indexOf(B) returns -1
-    indexOf(C) returns -1
     first() returns A
     last() returns A
     contains(A) returns true
     contains(B) returns false
-    contains(C) returns false
     isEmpty() returns false
     size() returns 1
     iterator() returns an Iterator reference
@@ -410,13 +394,10 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     addToRear(C) throws no Exception
     addAfter(C, B) throws no Exception
     addAfter(C, A) throws NoSuchElementException
-    addAfter(C, D) throws NoSuchElementException
     add(C) throws no Exception
     add(-1,C) throws IndexOutOfBoundException
     add(0,C) throws no Exception
     add(1,C) throws IndexOutOfBoundsException
-    add(2,C) throws IndexOutOfBoundsException
-    add(3,C) throws IndexOutOfBoundsException
     removeFirst() throws no Exception
     removeLast() throws no Exception
     remove(A) throws NoSuchElementException
@@ -425,18 +406,14 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     remove(-1) throws IndexOutOfBoundsException
     remove(0) throws no Exception
     remove(1) throws IndexOutOfBoundsException
-    remove(2) throws IndexOutOfBoundsException
     set(-1,C) throws IndexOutOfBoundsException
     set(0,C) throws no Exception
     set(1,C) throws IndexOutOfBoundsException
-    set(2,C) throws IndexOutOfBoundsException
     get(-1) throws IndexOutOfBoundsException
     get(0) returns B
     get(1) throws IndexOutOfBoundsException
-    get(2) throws IndexOutOfBoundsException
     indexOf(A) returns -1
     indexOf(B) returns 0
-    indexOf(C) returns -1
     first() returns B
     last() returns B
     contains(A) returns false
