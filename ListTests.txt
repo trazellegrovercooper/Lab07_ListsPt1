@@ -307,7 +307,36 @@ Define tests for at least 21 change scenarios, in addition to the 3 given as exa
     listIterator() throws UnsupportedOperationException
     listIterator(0) throws UnsupportedOperationException
     toString returns "[]"
-16) [A] -> set(0,B) -> [B]
+16) [A] -> set(0,B) -> [B] // Still not finished, needs double checking
+    addToFront(A) throws no Exception
+    addToRear(A) throws no Exception
+    addAfter(A, B) throws no Exception
+    addAfter(C, A) throws NoSuchElementException
+    add(A) throws no Exception 
+    add(-1, A) throws IndexOutOfBoundsException
+    add(0, A) throws no Exception
+    add(1, A) throws no Exception
+    removeFirst() throws no Exception
+    removeLast() throws no Exception
+    remove(A) throws NoSuchElementException
+    remove(B) returns B
+    remove(-1) throws IndexOutOfBoundsException
+    remove(0) throws no Exception
+    set(-1, A) throws IndexOutOfBoundsException
+    set(0, A) throws no Exception
+    get(-1) throws IndexOutOfBoundsException
+    get(0) returns B
+    indexOf(A) returns -1
+    indexOf(B) returns 0
+    first() returns B
+    last() returns B
+    contains(A) returns false
+    isEmpty() returns fale
+    size() returns 1
+    iterator() returns an Iterator reference
+    listIterator() throws UnsupportedOperationException
+    listIterator(0) throws UnsupportedOperationException
+    toString returns "[B]"
 17) [A,B] -> addToFront(C) -> [C,A,B]
 18) [A,B] -> addToRear(C) -> [A,B,C]
 19) [A,B] -> addAfter(C,A) -> [A,C,B]
